@@ -28,5 +28,14 @@ def multiply(input)
 end
 
 def power(number, power)
-  number ** power
+  number**power
+end
+
+def factorial(number)
+  i = 1
+  while number > 0
+    i *= number
+    number -= 1
+  end
+  i
 end
