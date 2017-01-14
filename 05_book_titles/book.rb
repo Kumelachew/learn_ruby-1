@@ -25,13 +25,12 @@ class Book
       end
     end
 
-    # always the first character of the first word
+    # always capitalize the first character of the first word
+    # for example the word 'the' is one of the conjuction word
+    # but if its the first word n the title, make sure to capitalize it
     captialized_titles[0] = captialized_titles[0].capitalize
 
     # finally return the final capitalized title
-    # for example the word 'the' is one of the
-    # conjuction word but if its the first word
-    # in the title, make sure to capitalize it
     @title = captialized_titles.join(' ')
   end
 end
